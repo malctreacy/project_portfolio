@@ -1,8 +1,22 @@
+/*
+Author: Malcolm Treacy
+Date: 5/15/19
+Description: Main portfolio-project styling for the entirety of my portfolio website.
+---------------------------------------------------------------------------------------------
+Portfolio.SCSS Index:
+1. Body Tag Styling
+2. Site Class Styling
+3. Site-Content Class Styling
+4. Header Class Styling
+---------------------------------------------------------------------------------------------
+*/
+/* 1. Body Tag Styling */
 body {
   /* Set font-style in body of site to Roboto */
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
 }
+/* 2. Site Class Styling */
 .site {
   display: flex;
   /* Site will be set up in a vertical fashion*/
@@ -10,7 +24,18 @@ body {
   /* Site will take up all the available viewport*/
   min-hieght: 100vh;
 }
+/* 3. Site-Content Class Styling */
 /* Take as much space as it needs (site-content) */
 .site-content {
   flex: 1;
+}
+/* 4. Header Class Styling */
+.header {
+  /*Specify the background image (no repetition):*/
+  background: url('./assets/images/bg.jpg') no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  min-height: 200px;
+  padding-top: 180px;
+  padding-bottom: 100px;
 }

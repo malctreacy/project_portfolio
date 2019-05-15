@@ -2,7 +2,7 @@
   <div class="site-content">
     <!-- NAVIGATION BAR CONTENT -->
     <div class = "container">
-      <nav class="navbar navbar-expand">
+      <nav class="navbar navbar-expand navbar-dark">
         <div class="navbar-nav">
             <!--
               * Bootstrap Utilities Used (targeting fontawesome icons):
@@ -15,10 +15,37 @@
         </div>
       </nav>
     </div>
-    <div class="header"></div>
-    <main>
+    <div class="header">
+      <div class="container">
+        <h1>Malcolm Treacy</h1>
+        <h2>Software Engineer</h2>
+      </div>
+    </div>
+    <main class = "container">
       <router-outlet></router-outlet>
     </main>
   </div>
-  <footer></footer>
+  <footer class = "footer container">
+    <div class="row">
+      <!--
+        Expand this area to entire width on the xs breakpoint
+        col-sm-6 will be evenly split starting on the sm breakpoint
+      -->
+      <div class= "col-12 col-sm-6">
+        Copyright ® 2019 Malcolm Treacy
+      </div>
+      <div>
+        <!--
+          Social Media Icons:
+          - float-right
+          - top margin = 3
+        -->
+        <ul class = "social-icons float-right mt-3">
+          <li><i class="fab fa-github-square"></i></li>
+          <li><i class="fab fa-linkedin"></i></li>
+          <li><i class="fab fa-twitter-square"></i></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 </div>

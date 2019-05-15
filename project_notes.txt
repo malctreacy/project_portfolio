@@ -1,6 +1,6 @@
 Author: Malcolm Treacy
 Date: 5/15/19
-Description: Project notes for future reference. 
+Description: Project notes for future reference.
 
 Editor Config:
 - Editor config ensures that the style stays consistent.
@@ -55,4 +55,13 @@ Integrating Bootstrap:
     - ng generate = used for creating new components which will add them to your project file
         EX: ng g component home # creates a home component
     - For this project we will user: portfolio, contact, and home components
+- Emmet Abbreviations:
+    - Shortcut to write html code
+    > down one level
+    ^ up one level
+    * multiplier
+    + additional child components
 
+- Adding Fonts:
+    - Additional fonts are accessible through the google fonts API
+    - Add font links in the index.html file

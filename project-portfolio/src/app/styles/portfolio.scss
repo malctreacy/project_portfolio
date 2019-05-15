@@ -7,7 +7,11 @@ Portfolio.SCSS Index:
 1. Body Tag Styling
 2. Site Class Styling
 3. Site-Content Class Styling
-4. Header Class Styling
+4. Navbar Class Styling
+5. Header-Class Styling
+6. Skill-Block Class Styling
+7. Header Class Styling
+8. Mat-Card Class Styling
 ---------------------------------------------------------------------------------------------
 */
 /* 1. Body Tag Styling */
@@ -22,14 +26,44 @@ body {
   /* Site will be set up in a vertical fashion*/
   flex-direction: column;
   /* Site will take up all the available viewport*/
-  min-hieght: 100vh;
+  min-height: 100vh;
 }
 /* 3. Site-Content Class Styling */
 /* Take as much space as it needs (site-content) */
 .site-content {
   flex: 1;
 }
-/* 4. Header Class Styling */
+/* 4. Navbar Class Styling */
+.navbar {
+  background: $alt-bg;
+  /*
+  - give the navbar a small 3px bottom border, solid,
+  with the given color assigned to $accent (_colors.scss)
+  */
+  border-bottom: 3px solid $accent;
+  top: 1.5rem;
+  /* 4.1 Navbar Link Styling (child to navbar)*/
+  .navbar-nav .nav-link {
+    /* Set to alternate color variation */
+    color: $alt-color;
+    /* Sets padding for navbar elements: */
+    padding: 1rem 0.5rem;
+    /* Adds a small css animation */
+    transition: color 0.2s ease-in;
+    /*
+    & signifies an additional spec (in this case 'active')
+    Sets navbar element color when element is selected
+    */
+    &.active {
+      color: $accent;
+    }
+    /* Sets navbar element color when element is not selected */
+    &:hover:not(.active) {
+      color: rgba($alt-color, 0.75);
+    }
+  }
+}
+/* 5. Header Class Styling */
 .header {
   /*Specify the background image (no repetition):*/
   background: url('./assets/images/bg.jpg') no-repeat;
@@ -38,4 +72,61 @@ body {
   min-height: 200px;
   padding-top: 180px;
   padding-bottom: 100px;
+  color: $alt-color;
 }
+
+/* 6. Skill Block Class Styling */
+.skill-block {
+  /* add padding to skill block */
+  padding: 2.5rem 1.25rem;
+  margin-bottom: 1rem;
+}
+
+/* 7. Footer Class Styling */
+.footer {
+  /* Pushes footer away from the bottom (with bottom style)*/
+  position: relative;
+  /* Pushes footer 1.25rem away from the bottom of viewport */
+  bottom: 1.25rem;
+  color: $alt-color;
+  /* Add a small border to the top of the footer bar */
+  border-top: 3px solid $accent;
+  background-color: $alt-bg;
+  p {
+    padding-top: 1.25rem;
+  }
+  .social-icons {
+    li {
+      /* line up social media icons */
+      display: inline-block;
+      /* remove bullets */
+      list-style: none;
+      a {
+        padding: 0.75rem 1rem;
+        text-align: center;
+        transition: color 0.2s ease-in;
+        &:hover {
+          color: $accent;
+        }
+      }
+    }
+  }
+}
+
+/* 8. Mat-Card Class Styling (override from Angular Materials)*/
+.row {
+  .mat-card {
+    /* Material Card Styling - make it consistant with rest of site */
+    color: $body-color;
+    background-color: $alt-bg;
+    /*
+    Remove extra padding between icon and header text
+    Angular material overrides this CSS -> enforce with !important
+    */
+    .mat-card-header-text {
+      margin: 0rem 0.5rem;
+    }
+  }
+}
+
+

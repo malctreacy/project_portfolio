@@ -1,3 +1,66 @@
-<p>
-  home works!
-</p>
+<div class="row">
+  <!-- Single column in any size < sm (580px), 3 even columns md and above-->
+  <div class="col-12 col-md-4">
+      <mat-card class = "skill-block">
+          <mat-card-header>
+            <!--
+            Recolor the icons to our accents color by attaching accent-color class to icon
+            icon will also be x2 bigger
+           -->
+            <div mat-card-avatar class="fa fa-mobile accent-color fa-2x"></div>
+            <mat-card-title>Responsive Webdesign</mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus non voluptates sunt praesentium nulla illo.</p>
+          </mat-card-content>
+        </mat-card>
+  </div>
+  <div class="col-12 col-md-4">
+      <mat-card class = "skill-block">
+          <mat-card-header>
+            <div mat-card-avatar class="fa fa-desktop accent-color fa-2x"></div>
+            <mat-card-title>Responsive Webdesign</mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus non voluptates sunt praesentium nulla illo.</p>
+          </mat-card-content>
+        </mat-card>
+  </div>
+  <div class="col-12 col-md-4">
+      <mat-card class = "skill-block">
+          <mat-card-header>
+            <div mat-card-avatar class="fa fa-mobile accent-color fa-2x"></div>
+            <mat-card-title>Responsive Webdesign</mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus non voluptates sunt praesentium nulla illo.</p>
+          </mat-card-content>
+        </mat-card>
+  </div>
+</div>
+<!-- Insert an Angular Material Divider to the End of the Skills Row -->
+<mat-divider class = "my-3"></mat-divider>
+<div class="row">
+  <div class="col-12 col-sm-6 col-md-8">
+    <h3>About Me</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut id illo nulla autem ipsa natus sint ab sed modi,
+      dicta impedit consequuntur a atque, quod voluptatum.</p>
+  </div>
+  <div class="col-12 col-sm-6 col-md-4">
+    <div class = "mb-3">
+      <strong>HTML 5 / CSS</strong>
+      <span class = "float-right">100%</span>
+      <mat-progress-bar value = "100" color = "accent"></mat-progress-bar>
+    </div>
+    <div class = "mb-3">
+      <strong>Bootstrap</strong>
+      <span class = "float-right">60%</span>
+      <mat-progress-bar value = "60" color = "warn"></mat-progress-bar>
+    </div>
+    <div class = "mb-3">
+      <strong>Angular CLI</strong>
+      <span class = "float-right">70%</span>
+      <mat-progress-bar accent-color value = "70" color = "accent">70%</mat-progress-bar>
+    </div>
+  </div>
+</div>

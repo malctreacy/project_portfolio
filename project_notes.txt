@@ -65,3 +65,7 @@ Integrating Bootstrap:
 - Adding Fonts:
     - Additional fonts are accessible through the google fonts API
     - Add font links in the index.html file
+
+- Angular Material:
+    - Cmd: ng add @angular/Material
+    - These are optimized angular bootstrap-like components

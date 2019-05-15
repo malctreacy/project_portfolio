@@ -1,0 +1,58 @@
+Author: Malcolm Treacy
+Date: 5/15/19
+Description: Project notes for future reference. 
+
+Editor Config:
+- Editor config ensures that the style stays consistent.
+
+Package.json:
+- Package containing all of the project's dependencies
+
+Angular.json:
+- Contains project configuration information
+- Testing information / setup
+
+index.html:
+- App Root Element -  where my angular application will be bootstrapped
+- app-root represents the HTML component
+- index.html loads app-component
+
+Assets Folder:
+- Area for static content, such as images.
+
+Integrating Bootstrap:
+- Container element is required for the bootstrap system.
+- Show/hiding breakpoints:
+    - CSS classes can initiate breakpoints
+    - d-none class = content will be hidden for all breakpoints
+    - d-sm-block = content will not be displayed when at a small size
+    - Combining classes can target only certain breakpoints you want certain
+- Margins / Padding:
+    - m is for margin
+    - p is for padding
+    - Sides:
+        * t - top
+        * b - bottom
+        * l - left
+        * r - right
+        * x - left + right
+        * y - top + bottom
+        * blank for all sides
+        EX:
+        <div class="mt-1 px-sm-2></div>
+        * Margin-top 0,25 REM for all breakpoints
+        * px-sm-2 left and right padding of 0,50 REM
+- Floats:
+    - float-none = disables floating
+    - float-left / right / bottom / top = directional floating.
+
+- Adding Bootstrap to Angular Project
+    * Run the following command:
+    npm install --save bootstrap
+
+- Angular CLI:
+    - Generating Components:
+    - ng generate = used for creating new components which will add them to your project file
+        EX: ng g component home # creates a home component
+    - For this project we will user: portfolio, contact, and home components
+

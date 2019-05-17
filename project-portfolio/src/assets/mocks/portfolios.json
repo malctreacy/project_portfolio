@@ -8,7 +8,7 @@
   "id": 2,
   "name": "Cardguard",
   "description": "volutpat quam pede lobortis ligula sit amet eleifend pede libero",
-  "type": "Angular",
+  "type": "PHP",
   "preview": "https://fakeimg.pl/650x450/000000/"
 }, {
   "id": 3,
@@ -20,13 +20,13 @@
   "id": 4,
   "name": "Latlux",
   "description": "aliquam augue quam sollicitudin vitae consectetuer eget rutrum at lorem",
-  "type": "Angular",
+  "type": "Ember",
   "preview": "https://fakeimg.pl/650x450/000000/"
 }, {
   "id": 5,
   "name": "Zathin",
   "description": "aenean fermentum donec ut mauris eget massa tempor convallis nulla",
-  "type": "Vue",
+  "type": "PHP",
   "preview": "https://fakeimg.pl/650x450/000000/"
 }, {
   "id": 6,

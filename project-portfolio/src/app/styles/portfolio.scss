@@ -12,6 +12,9 @@ Portfolio.SCSS Index:
 6. Skill-Block Class Styling
 7. Header Class Styling
 8. Mat-Card Class Styling
+9. Business-card Class Styling
+10. Portfolio-Preview Class Styling
+11. Filter-Card Preview Class Styling
 ---------------------------------------------------------------------------------------------
 */
 /* 1. Body Tag Styling */
@@ -129,7 +132,7 @@ body {
   }
 }
 
-/* 6. Business-card Class Styling */
+/* 9. Business-card Class Styling */
 .business-card {
   /* add padding to business card */
   padding: 2.5rem 1.25rem;
@@ -143,7 +146,7 @@ body {
     }
   }
 }
-
+/* 10. Portfolio-Preview Class Styling */
 .portfolio-preview {
   text-align: center;
   padding-top: 5rem;
@@ -152,7 +155,7 @@ body {
     border: 2px solid $body-color;
   }
 }
-
+/* 11. Filter-Card Preview Class Styling */
 .filter-card {
   .mat-car-header-text {
     margin: 0rem;

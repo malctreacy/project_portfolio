@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./portfolio.component.scss']
 })
 export class PortfolioComponent implements OnInit {
-
+  // Only assignable
+  selectedType: 'all' | 'Angular' | 'React' | 'Vue' = 'all';
   constructor() { }
 
   ngOnInit() {

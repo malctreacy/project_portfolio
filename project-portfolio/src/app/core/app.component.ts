@@ -17,10 +17,10 @@ export class AppComponent implements OnInit {
 
   ngOnInit(){
 
-    setInterval(()=>{
-      this.rotateWords()
-    },this.x*1000)
-    }
+  setInterval(()=>{
+    this.rotateWords()
+  },this.x*1000)
+  }
   rotateWords(){
     if(this.currentIdx>=this.words.length){
       this.currentIdx=0;

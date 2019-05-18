@@ -10,6 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { AngularSvgIconModule } from 'angular-svg-icon';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule,
     MaterialModule,
     HttpClientModule,
+    AngularSvgIconModule,
     FormsModule
   ],
   providers: [],

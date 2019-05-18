@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { PortfolioService } from 'src/app/services/portfolio.service';
 import { Portfolio } from 'src/app/services/portfolio.model';
 import { transition, trigger, style, animate, query, stagger, animateChild } from '@angular/animations';
+import { Route, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-portfolio',
@@ -43,10 +44,16 @@ export class PortfolioComponent implements OnInit {
   portfolios: Portfolio[];
 
   // constructor only used for basic initializations
-  constructor(private portfolioSvc:PortfolioService) { }
+  constructor(private portfolioSvc:PortfolioService, private route: ActivatedRoute) { }
 
   // onInit is a provided as a lifecycle hooks
   ngOnInit() {
+    // activate route contains routing information
+    // snapshot is a non-observable version of queryParamMap
+    const filter = this.route.snapshot.queryParamMap.get('filter');
+    if (filter) {
+      this._selectedType = filter;
+    }
     this.loadPortfolios(this._selectedType);
   }
 

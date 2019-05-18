@@ -1,8 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
 @import '../src/app/styles/material';
 @import '../src/app/styles/_colors';
-@import '../node_modules/bootstrap/scss/bootstrap.scss';
-@import '../src/app/styles/portfolio';
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+@import '~bootstrap/scss/reboot';
+@import '~bootstrap/scss/type';
+@import '~bootstrap/scss/bootstrap-grid';
+@import '~bootstrap/scss/utilities/display';
+@import '~bootstrap/scss/utilities/float';
+@import '~bootstrap/scss/utilities/text';
+@import '~bootstrap/scss/utilities/align';
+@import '~bootstrap/scss/utilities/borders';
+@import '~bootstrap/scss/utilities/sizing';
+@import '~bootstrap/scss/nav';
+@import '~bootstrap/scss/navbar';
+@import '~bootstrap/scss/images';
+
+@import '../src/app/styles/portfolio';

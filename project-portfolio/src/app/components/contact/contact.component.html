@@ -1,3 +1,33 @@
-<p>
-  contact works!
-</p>
+<div class="row">
+  <mat-card class="col-12">
+    <h4>Contact Information</h4>
+  </mat-card>
+</div>
+<mat-divider class="my-3"></mat-divider>
+<div class="row mb-5">
+  <div class="col-12 col-md-4">
+    <address>
+      <p><strong>Malcolm Treacy</strong></p>
+      <p>Irvine, CA</p>
+      <p>USA</p>
+    </address>
+    <address>
+      <p><strong>Email</strong></p>
+      <a href= "mailto:mtreacy@uci.edu" class = "accent-color">mtreacy@uci.edu</a>
+    </address>
+  </div>
+  <div class="col-12 col-md-8">
+    <form ngNoForm action="https://formspree.io/mtreacy@uci.edu" method = POST>
+      <mat-form-field class = "full-width mb-2">
+        <input matInput type = "email" placeholder = "Your Email"  name = "_replyto" required>
+      </mat-form-field>
+      <mat-form-field class = "full-width mb-2">
+          <input matInput placeholder = "Subject" name = "subject" required>
+      </mat-form-field>
+      <mat-form-field class = "full-width mb-2">
+          <textarea input matInput placeholder = "Message" name = "message"  required></textarea>
+      </mat-form-field>
+      <button mat-stroked-button type="submit">Send Message</button>
+    </form>
+  </div>
+</div>

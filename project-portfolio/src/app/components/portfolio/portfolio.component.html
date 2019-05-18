@@ -13,7 +13,7 @@
 <mat-divider class="my-3"></mat-divider>
 
 <div @list class="row mb-5" *ngIf = "portfolios">
-  <div @items class="col-12 col-sm-6 col-md-4 col-lg-3 col-mb-3" *ngFor="let item of portfolios">
+  <div @items class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3" *ngFor="let item of portfolios">
       <mat-card>
           <mat-card-header>
             <div mat-card-avatar>
@@ -36,7 +36,7 @@
             {{item.description}}
           </mat-card-content>
           <mat-card-actions>
-            <button mat-button>Visit</button>
+            <button mat-stroked-button>Visit</button>
           </mat-card-actions>
         </mat-card>
   </div>

@@ -1,36 +1,36 @@
 <div class="row">
   <!-- Single column in any size < sm (580px), 3 even columns md and above-->
-  <div class="col-12 col-md-4">
+  <div class="col-12 col-md-4 my-3">
       <mat-card class = "skill-block">
           <mat-card-header>
             <!--
             Recolor the icons to our accents color by attaching accent-color class to icon
             icon will also be x2 bigger
            -->
-            <div mat-card-avatar class="fa fa-mobile accent-color fa-2x"></div>
-            <mat-card-title>Responsive Webdesign</mat-card-title>
+            <div mat-card-avatar class="fa fa-desktop accent-color fa-2x "></div>
+            <mat-card-title>Responsive Webdesigns</mat-card-title>
           </mat-card-header>
           <mat-card-content>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus non voluptates sunt praesentium nulla illo.</p>
           </mat-card-content>
         </mat-card>
   </div>
-  <div class="col-12 col-md-4">
+  <div class="col-12 col-md-4 my-3">
       <mat-card class = "skill-block">
           <mat-card-header>
-            <div mat-card-avatar class="fa fa-desktop accent-color fa-2x"></div>
-            <mat-card-title>Responsive Webdesign</mat-card-title>
+            <div mat-card-avatar class="fa fa-mobile accent-color fa-2x"></div>
+            <mat-card-title>Mobile Application Development</mat-card-title>
           </mat-card-header>
           <mat-card-content>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus non voluptates sunt praesentium nulla illo.</p>
           </mat-card-content>
         </mat-card>
   </div>
-  <div class="col-12 col-md-4">
+  <div class="col-12 col-md-4 my-3">
       <mat-card class = "skill-block">
           <mat-card-header>
-            <div mat-card-avatar class="fa fa-mobile accent-color fa-2x"></div>
-            <mat-card-title>Responsive Webdesign</mat-card-title>
+            <div mat-card-avatar class="fas fa-project-diagram accent-color fa-2x"></div>
+            <mat-card-title>Software Engineering</mat-card-title>
           </mat-card-header>
           <mat-card-content>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus non voluptates sunt praesentium nulla illo.</p>
@@ -72,10 +72,10 @@
     </div>
     <div class="col-12 col-md-9">
       <!--Starting from the medium break point hide the H2 icon-->
-      <h2><i class="fab fa-angular angular-color d-md-none mr-2"></i>Angular Devlopment</h2>
+      <h2><i class="fab fa-angular angular-color d-md-none mr-2"></i>Angular</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt tenetur consectetur sequi eos accusamus excepturi expedita, totam odio ducimus quibusdam velit. A odio reprehenderit perspiciatis est!</p>
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus facere a debitis optio ab quo eligendi unde! Odit nemo animi tempore.</p>
-      <button mat-stroked-button>View More</button>
+      <button [routerLink]="['/portfolio']" [queryParams] = "{filter:'Angular'}" mat-stroked-button >View More</button>
     </div>
   </div>
 
@@ -85,7 +85,7 @@
       <h2>React <i class="fab fa-react react-color d-md-none ml-2"></i></h2>
       <p>Ea saepe accusamus ipsum assumenda voluptate hic, placeat, fuga consequatur quas quia soluta provident rem, quidem doloribus earum repellat reiciendis. Fugiat ratione quidem rerum dignissimos unde.</p>
       <p>Perferendis aperiam dolor quo cum dolores obcaecati labore cumque, inventore porro ut doloremque quis, ipsa suscipit quos facere. Tenetur, atque sed!</p>
-      <button mat-stroked-button>View More</button>
+      <button [routerLink]="['/portfolio']" [queryParams] = "{filter:'React'}" mat-stroked-button >View More</button>
     </div>
     <div class="col-3 text-center d-none d-md-block">
         <i class="fab fa-react fa-10x react-color"></i>
@@ -101,7 +101,7 @@
       <h2><i class="fab fa-vuejs vue-color d-md-none mr-2"></i>Vue</h2>
       <p>Necessitatibus at inventore explicabo? Sed, cumque. Voluptates, neque beatae minus possimus distinctio expedita vitae soluta aperiam quisquam nemo, iusto labore ipsam nam magni dolores, saepe laborum.</p>
       <p>Ex voluptas ratione, mollitia aut magni accusamus quis sint sed consectetur accusantium iure minima doloribus! Eligendi ex nobis sequi asperiores? Mollitia!</p>
-      <button mat-stroked-button>View More</button>
+      <button [routerLink]="['/portfolio']" [queryParams] = "{filter:'Vue'}" mat-stroked-button >View More</button>
     </div>
   </div>
 
@@ -114,14 +114,11 @@
       </div>
     </div>
     <div class="row no-gutters">
-      <div class="col-12 col-sm-4 col-md-4"><img class = "img-fluid" src="https://fakeimg.pl/650x450/000000/?text=app1" alt="app1"></div>
-      <div class="col-12 col-sm-4 col-md-4"><img class = "img-fluid" src="https://fakeimg.pl/650x450/000000/?text=app2" alt="app2"></div>
-      <div class="col-12 col-sm-4 col-md-4"><img class = "img-fluid" src="https://fakeimg.pl/650x450/000000/?text=app3" alt="app3"></div>
-      <div class="col-12 col-sm-6 col-md-3"><img class = "img-fluid" src="https://fakeimg.pl/650x450/000000/?text=app4" alt="app4"></div>
-      <div class="col-12 col-sm-6 col-md-3"><img class = "img-fluid" src="https://fakeimg.pl/650x450/000000/?text=app5" alt="app5"></div>
-      <div class="col-12 col-sm-6 col-md-3"><img class = "img-fluid" src="https://fakeimg.pl/650x450/000000/?text=app6" alt="app6"></div>
-      <div class="col-12 col-sm-6 col-md-3"><img class = "img-fluid" src="https://fakeimg.pl/650x450/000000/?text=app7" alt="app7"></div>
-      <div class="col-12 mt-3"><button mat-stroked-button>View More</button></div>
+      <div *ngFor = "let item of recentProjects;index as i"
+      [ngClass] = "{'col-12 col-sm-4 col-md-4': i < 3, 'col-12 col-sm-6 col-md-3': i >= 3 }">
+        <img class = "img-fluid" [src]="item.preview + '?text=' + item.name" [alt]="item.name">
+      </div>
+      <div class="col-12 mt-3"><button [routerLink]="['/portfolio']" mat-stroked-button >View More</button></div>
     </div>
   </div>
 

@@ -6,15 +6,15 @@
   "preview": "https://fakeimg.pl/650x450/000000/"
 }, {
   "id": 2,
-  "name": "Cardguard",
+  "name": "Cardg",
   "description": "volutpat quam pede lobortis ligula sit amet eleifend pede libero",
-  "type": "PHP",
+  "type": "Ionic",
   "preview": "https://fakeimg.pl/650x450/000000/"
 }, {
   "id": 3,
   "name": "Bitchip",
   "description": "suspendisse ornare consequat lectus in est risus auctor sed tristique",
-  "type": "Angular",
+  "type": "Python",
   "preview": "https://fakeimg.pl/650x450/000000/"
 }, {
   "id": 4,
